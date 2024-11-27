@@ -1,0 +1,93 @@
+:root {
+    --theme-background : #f5f5f8;
+    --theme-heading-primary : #1B264F;
+    --theme-heading-secondary : #506BCA;
+    --theme-text-primary : #353844;
+    --theme-text-secondary : #353844;
+    --theme-text-gold : #D2AD81;
+}
+body{
+    background-color: var(--theme-background);
+    font-family: 'Poppins', sans-serif;
+    color: var(--theme-text-primary);
+}
+::marker {
+    color: var(--theme-text-gold);
+}
+.content-wrapper .card {
+    height: 336px;
+    border-radius: 8px;
+}
+.content-wrapper .card .row {
+    height: 100%;
+}
+.left-img-wrapper .left-img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.bold-heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 55px;
+    color: var(--theme-heading-primary);
+}
+.bold-heading small {
+    color: var(--theme-heading-secondary);
+}
+.bold-sub-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--theme-text-primary);
+}
+.right-content-wrapper .card-text {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+}
+.btn-theme {
+    background-color: var(--theme-heading-primary);
+    color: white;
+    border: none;
+    padding: 1rem 5rem;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn-theme:hover {
+    color: white;
+}
+
+/* write media query for mobile */
+@media (max-width: 768px) {
+    .content-wrapper .card {
+        height: auto;
+    }
+    /*.left-img-wrapper .left-img {*/
+    /*    height: 200px;*/
+    /*}*/
+    .bold-heading {
+        font-size: 2.5rem;
+        line-height: 40px;
+    }
+    .bold-sub-heading {
+        font-size: 1.2rem;
+        line-height: 24px;
+    }
+    .right-content-wrapper .card-text {
+        font-size: 1rem;
+    }
+    .btn-theme {
+        padding: 0.8rem 3rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .content-wrapper .card {
+        height: 100%;
+    }
+}
